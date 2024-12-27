@@ -56,21 +56,23 @@
     }
     .games-list {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      justify-content: center;
+      gap: 15px;
     }
-    .game-button {
-      text-align: center;
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      font-size: 1em;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
+    .game-image {
+      width: 250px;
+      height: 250px;
+      object-fit: cover; /* Ensures the image scales properly */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .game-button:hover {
-      background-color: #45a049;
+    .game-image:hover {
+      transform: scale(1.05); /* Slight zoom effect on hover */
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+    .contact-info p {
+      margin: 5px 0;
     }
     .employees-list {
       list-style: none;
@@ -82,9 +84,6 @@
       margin-bottom: 5px;
       border: 1px solid #ddd;
       border-radius: 5px;
-    }
-    .contact-info p {
-      margin: 5px 0;
     }
   </style>
 </head>
@@ -105,19 +104,21 @@
       <p>
         Kumbar Games is a game development company dedicated to creating unique and engaging gaming experiences. Our primary focus is on political games, offering players an opportunity to strategize, make impactful decisions, and explore dynamic narratives.</p>
 
-<p>Our journey began with the release of our first game, 271, which was an instant hit among players. Since then, we have continued to innovate, creating games that challenge and captivate players with their depth and creativity.</p>
+      <p>Our journey began with the release of our first game, 271, which was an instant hit among players. Since then, we have continued to innovate, creating games that challenge and captivate players with their depth and creativity.</p>
 
-<p>With each project, we strive to push the boundaries of storytelling and interactivity, ensuring that every game we produce leaves a lasting impression on our audience. Kumbar Games is committed to providing players with immersive experiences that are both entertaining and thought-provoking.</p>
+      <p>With each project, we strive to push the boundaries of storytelling and interactivity, ensuring that every game we produce leaves a lasting impression on our audience. Kumbar Games is committed to providing players with immersive experiences that are both entertaining and thought-provoking.</p>
     </section>
+
     <!-- Games Section -->
-<section class="section" id="games">
-  <h2>Games by Kumbar Games</h2>
-  <div class="games-list">
-    <a href="game1.html">
-      <img src="https://i.ibb.co/4KXxdKn/20241227-202738-0000.png" alt="271" class="game-image">
-    </a>
-  </div>
-</section>
+    <section class="section" id="games">
+      <h2>Games by Kumbar Games</h2>
+      <div class="games-list">
+        <a href="game1.html">
+          <img src="https://i.ibb.co/4KXxdKn/20241227-202738-0000.png" alt="271" class="game-image">
+        </a>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="section" id="contact">
       <h2>How to Contact Kumbar Games</h2>
@@ -140,4 +141,4 @@
     </section>
   </div>
 </body>
-  </html>
+</html>
